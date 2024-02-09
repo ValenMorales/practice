@@ -17,6 +17,7 @@ header{
 .logo img {
     height: 20vh;
     width: auto;
+    overflow: hidden;
 }
 
  header nav ul{
@@ -24,33 +25,34 @@ header{
     list-style: none;
 }
 
- header nav ul li{
+ header nav ul li a{
     margin: 0 10px; 
     display: inline-block;
     padding: 0px 20px;
     font-size: 20px;
+    text-decoration: none;
+    color:#ebe6ea;
 }
 
 main {
     background-color:#e4c5c4;
 }
 
- header nav ul li a{
-    text-decoration: none;
-    color: #333;
-    font-size: 500;
-}
+
 
 header nav ul li a:hover{
     text-decoration: none;
     color: #e4c5c4;
-    font-size: 600;
+    font-size: 21px;
+    transition: 1s;
 }
 .about a:hover{
     color: #333;
     background-color: #6f7357;
     cursor: pointer;
-    font-weight: 600;
+    border: 2px solid #333;
+    border-radius: 15px;
+    transition: 1.5s;
 }
 
 h1 {
