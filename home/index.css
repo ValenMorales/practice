@@ -31,7 +31,7 @@ header{
     padding: 0px 20px;
     font-size: 20px;
     text-decoration: none;
-    color:#ebe6ea;
+    color: #273a2d
 }
 
 main {
@@ -104,7 +104,7 @@ button:hover{
 
 .right {
     height: 80vh;
-    background : url(icon.png);
+    background : url(/image/icon.png);
     background-size: cover;
     background-position: center;
     width: 40%;
