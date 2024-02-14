@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 85px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 20vh;
+    width: auto;
+    overflow: hidden;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+nav a:hover{
+    color: #e4c5c4;
+    font-size: 21px;
+    transition: 1.5s;
+}
+
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+    nav a{
+        font-size: 16px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between
+    }
+
+    
+}
+
+/*header*/
+
+
+/*footer*/
+footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -2px 3px rgba(0,0,0,0.12), 0 -2px 2px rgba(0,0,0,0.24);
+    padding: 20px 10%;
+    background-color: #fff;
+}
+
+footer p{
+    font-size: 20px;;
+ }
+ 
+/*profile*/
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px
+}
+
+
+/*header profile*/
+.front-page{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.avatar-profile{
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -70px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    background-color: aliceblue;
+    margin-left: 10px;
+}
+
+.title{
+    font-size: 18px;
+    display: flex;
+    place-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.title-2{
+    place-items: center;
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+
+
+.header-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-icons img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+.header-profile{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+button{
+
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-image: url("../image/escribiendo.png");
+    padding: 5px 10px;
+}
+
+
+
+.stars {
+    color: rgb(165, 165, 4);
+}
+
+.profile-contacto{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+
+
+.contacto-row {
+    display: flex;
+    align-items: center;
+}
+
+.contacto-row img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.contacto-item{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.contacto-item, .video, .dates-transmiciones {
+    flex-direction: column;
+    width: 33.33%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*dates*/
+
+.dates-transmiciones table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.dates-transmiciones th, .dates-transmiciones td {
+    padding: 12px 15px;
+}
+
+.dates-transmiciones th {
+    background-color: #d5d5d5;
+    color: #ffffff;
+}
+
+.dates-transmiciones td {
+    border-bottom: 1px solid #dddddd;
+}
+
+.dates-transmiciones tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* ---------------------------------*/
+
+
+
