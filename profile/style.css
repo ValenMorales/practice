@@ -87,7 +87,7 @@ footer p{
 /*header profile*/
 .front-page{
     width: 100%;
-    position: relative;
+    height: 400px;
     overflow: hidden;
 }
 .avatar-profile{
@@ -133,6 +133,8 @@ footer p{
 }
 
 .header-profile{
+   
+    width: 100%;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -178,7 +180,7 @@ button{
 
 
 }
-.contacto-item, .video, .dates-transmiciones {
+.contacto-item, .video {
     flex-direction: column;
     width: 33.33%;
     align-items: center;
@@ -186,24 +188,37 @@ button{
     justify-content: center;
 }
 
-
 /*dates*/
 
-.dates-transmiciones table {
+.dates-transmisiones  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dates-transmisiones h2 {
+    margin: 30px;
+
+}
+
+.dates-transmisiones table {
     width: 90%;
     border-collapse: collapse;
     text-align: center;
     background-color: #f9f9f9;
     box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
 }
 
-.dates-transmiciones th, .dates-transmiciones td {
+.dates-transmisiones th, .dates-transmisiones td {
     padding: 12px 15px;
 }
 
-.dates-transmiciones th {
-    background-color: #d5d5d5;
-    color: #ffffff;
+.dates-transmisiones th {
+    
+    color: #333;
 }
 
 .dates-transmiciones td {
