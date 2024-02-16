@@ -5,6 +5,8 @@
     font-family: 'Protest Riot', sans-serif;
 }
 
+
+
 header{
     display: flex;
     justify-content: space-between;
@@ -118,6 +120,13 @@ h2 {
     
 }
 
+.item details a {
+    text-decoration: none;
+    cursor: pointer;
+    
+
+}
+
 .item:hover{
     transform:  translateY(-3%);
     transition: 1s;
@@ -167,4 +176,3 @@ details p {
     padding: 0 1em .5em;
     transition: .4s;
 }
-

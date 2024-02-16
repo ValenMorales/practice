@@ -2,17 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Protest Riot', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-header{
+body{
+    margin: 0;
+}
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
+    height: 100px; 
     background-color: #fff;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
 
 .logo img {
     height: 20vh;
@@ -35,20 +39,25 @@ header{
 
 }
 
+main {
+    background-color:#fff;
+}
 
 
 
 header nav ul li a:hover{
     text-decoration: none;
-    color: #e4c5c4;
+    color: #558263;
     font-size: 21px;
     transition: 1s;
 }
 .about a:hover{
-    background-color: pink;
-    cursor:pointer;
-    transition: all 1s ease;
-    transform: scale(1.1);
+    color: #333;
+    background-color: #6f7357;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 15px;
+    transition: 1.5s;
 }
 
 h1 {
@@ -90,107 +99,108 @@ button{
 }
 
 button:hover{
-    background-color: #ff6b81;
+    background-color: #558263;
     border: none;
-    
-    transition: all 10s ease;
+    /* hacer que el boton se agrande pero lento */
+    transition: all 0.3s ease;
     transform: scale(1.1);
 }
 
 
 .right {
     height: 80vh;
-    background-image: url('../image/logotipo.png');
+    background : url(../image/icon.png);
 
     background-size: cover;
     background-position: center;
     width: 40%;
-  
 }
 
 .screen{
     display:flex;
-     
+
 }
 
 .welcome{
-    color:#e4c5c4;
-    font-size: 70px;
+    color:#273a2d;
+    font-size: 60px;
 }
 
-.about {
-    height: 100vh;
-}
+
 
 
 /*Cards*/
 .container-card{
-	width: 100%;
+    width: 100%;
     height: 55vh;
-	display: flex;
-	max-width: 1100px;
-	margin: auto;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
 }
 .title-cards{
-	width: 100%;
-	max-width: 1080px;
-	margin: auto;
-	padding: 20px;
-	margin-top: 20px;
-	text-align: center;
-	color: #273a2d;
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #273a2d;
 }
 .card{
-	width: 100%;
-	margin: 20px;
-	border-radius: 6px;
-	overflow: hidden;
-	background:#fff;
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-	transition: all 400ms ease-out;
-	cursor: default;
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
     overflow: hidden;
 
 }
 .card:hover{
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-	transform: translateY(-3%);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
 }
 .card img{
-	width: 100%;
-	height: 210px;
+    width: 100%;
+    height: 210px;
 }
 .card .content-card{
-	padding: 15px;
-	text-align: center;
+    padding: 15px;
+    text-align: center;
 }
 .card .content-card h3{
-	margin-bottom: 15px;
-	color: #273a2d;
+    margin-bottom: 15px;
+    color: #273a2d;
 }
 
  .about a{
     
-	display:block;
-	padding: 20px;
-	text-decoration: none;
-	color: #333;
-	border: 3px solid #333;
-	border-radius: 4px;
+    display:block;
+    padding: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+    border: 3px solid #333;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
     text-align: center;
-    margin:auto;
+    margin-left: 500px;
+    margin-right: 500px;
     font-size: large;
-    width: 40%;
+
 }
 
 
 @media only screen and (min-width:320px) and (max-width:768px){
-	.container-card{
-		flex-wrap: wrap;
-	}
-	.card{
-		margin: 15px;
-	}
+    .container-card{
+        flex-wrap: wrap;
+    }
+    .card{
+        margin: 15px;
+    }
 }
 
 footer{
@@ -198,5 +208,202 @@ footer{
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    
 }
+
+
+/*imagen*/
+
+/* Contenedor de la imagen */
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Para ocultar el desbordamiento */
+    object-fit: cover;
+    padding: 30px;
+    margin: 20px;
+    margin: 0;
+    
+    
+}
+.image-container img {
+    width: 70rem;
+    height: 90vh;
+    display: block;
+    border:1 px solid #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+
+}
+
+.overlay h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.questions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #f5f8ff;
+}
+
+.question-container{
+    margin: 40px 40px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.question-container h1{
+color: #333;
+}
+
+.question-container .tab{
+    position:relative;
+    background: #fff;
+    padding: 0 20px 20px ;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.question-container .tab input{
+ appearance: none;
+}
+
+.question-container .tab label {
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+.question-container .tab label::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color: rgba(0,0,0,0.1);
+    transition: transform 1s;
+}
+
+.question-container .tab:hover label::after{
+  color: #333;
+  color:#fff;
+}
+
+.question-container .tab input:checked ~ label::after{
+    transform: rotate(135deg);
+}
+.question-container .tab input:checked ~ label h3{
+    background: #fff;
+    padding: 20px 10px;
+    color:#333;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+
+.question-container .tab input:checked ~ label h2{
+position:absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+font-size: 8em;
+color: rgba(255,255,255,0.2);
+justify-content: flex-end;
+padding: 20px;
+}
+
+
+
+
+.question-container .tab label h2{
+    width: 40px;
+    height: 40px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+} 
+
+.question-container .tab label h3{
+   position:relative;
+   font-weight: 500;
+   color: #333;
+   z-index:10;
+}
+
+.question-container .tab .question-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0;
+
+}
+
+.question-container .tab input:checked ~ .question-content{
+    max-height: 100vh;
+}
+
+.question-container .tab .question-content p{
+  color:#fff;
+}
+
+.question-container .tab .question-content p{
+    position: relative;
+    color: #333;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+
+
+.question-container .tab:nth-child(2) label h2{
+    background: linear-gradient(135deg, #70f570, #23381d);
+}
+
+.question-container .tab:nth-child(3) label h2{
+    background: linear-gradient(135deg, #4a9f79, #405340);
+}
+
+.question-container .tab:nth-child(4) label h2{
+    background: linear-gradient(135deg, #70f570, #23381d);
+}
+
+
+.question-container .tab:nth-child(5) label h2{
+    background: linear-gradient(135deg, #4a9f79, #405340);
+}
+
+
+
+
+
 
