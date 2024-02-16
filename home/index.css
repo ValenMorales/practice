@@ -35,9 +35,6 @@ header{
 
 }
 
-main {
-    background-color:#e4c5c4;
-}
 
 
 
@@ -48,15 +45,9 @@ header nav ul li a:hover{
     transition: 1s;
 }
 .about a:hover{
-    color: #333;
-    font-family: 'Protest Riot', sans-serif;
-    cursor: pointer;
-    border-radius: 15px;
-  
-    background-color: #ff6b81;
-    border: none;
-    /* hacer que el boton se agrande pero lento */
-    transition: all 0.10s ease;
+    background-color: pink;
+    cursor:pointer;
+    transition: all 1s ease;
     transform: scale(1.1);
 }
 
@@ -101,30 +92,30 @@ button{
 button:hover{
     background-color: #ff6b81;
     border: none;
-    /* hacer que el boton se agrande pero lento */
-    transition: all 0.3s ease;
+    
+    transition: all 10s ease;
     transform: scale(1.1);
 }
 
 
 .right {
     height: 80vh;
-    background-image: url('../image/icon.png');
+    background-image: url('../image/logotipo.png');
 
     background-size: cover;
     background-position: center;
     width: 40%;
-    overflow: hidden
+  
 }
 
 .screen{
     display:flex;
-
+     
 }
 
 .welcome{
-    color:#fffafe;
-    font-size: 60px;
+    color:#e4c5c4;
+    font-size: 70px;
 }
 
 .about {
@@ -182,18 +173,14 @@ button:hover{
     
 	display:block;
 	padding: 20px;
-	margin-top: 10px;
 	text-decoration: none;
 	color: #333;
 	border: 3px solid #333;
 	border-radius: 4px;
-	transition: all 400ms ease;
-	margin-bottom: 5px;
     text-align: center;
     margin:auto;
     font-size: large;
     width: 40%;
-
 }
 
 

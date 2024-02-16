@@ -8,6 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -17,7 +18,7 @@ header{
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    height: 85px;
+    max-height: 85px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .logo{
@@ -41,6 +42,7 @@ nav a:hover{
     font-size: 21px;
     transition: 1.5s;
 }
+
 
 @media (max-width: 768px){
     header{
@@ -80,7 +82,7 @@ footer p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px
+    margin-top: 3px;
 }
 
 
@@ -88,7 +90,10 @@ footer p{
 .front-page{
     width: 100%;
     height: 400px;
+    position: relative;
     overflow: hidden;
+    object-fit: cover;
+
 }
 .avatar-profile{
     width: 150px;
@@ -101,6 +106,7 @@ footer p{
     z-index: 1;
     background-color: aliceblue;
     margin-left: 10px;
+    object-fit: cover;
 }
 
 .title{
@@ -132,35 +138,18 @@ footer p{
 
 }
 
+
+
 .header-profile{
    
     width: 100%;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 100%;
+
 }
-
-button{
-
-    border: 2px solid #333;
-    border-radius: 10px;
-    background-image: url("../image/escribiendo.png");
-    padding: 5px 10px;
-}
-
-
-
 .stars {
     color: rgb(165, 165, 4);
 }
-
-.profile-contacto{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
-    width: 100%;
-    margin-bottom: 60px;
-}
-
-
 
 .contacto-row {
     display: flex;
@@ -174,61 +163,271 @@ button{
     overflow: hidden;
 }
 
+
 .contacto-item{
+    border-right: solid 1px #f0ecec;
     display: flex;
     flex-direction: column;
-
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 15px 0 3px -10px rgba(0,0,0,0.12), 15px 0 2px -10px rgba(0,0,0,0.24);
 
 }
-.contacto-item, .video {
-    flex-direction: column;
-    width: 33.33%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+
+.profile-contact{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.contacto-item button{
+    width: 33%;
+    background-color: aquamarine;
+}
+
+button{
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.miBoton {
+    background-color: lightblue;
+    border: none;
+    color: white; 
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 12px 24px; 
+    text-decoration: none; 
+    font-size: 16px;
+    transition-duration: 0.4s; 
+    cursor: pointer;
+}
+
+.miBoton img {
+    height: 20px; /* Altura de la imagen */
+    margin-left: 8px; /* Espacio a la izquierda de la imagen */
+}
+
+.miBoton:hover {
+    color: white;
+    width: 40%;
+    transition: 1s;
+}
+
+.video{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 20px;
+   align-items: center;
+   justify-items: center;
+   width: 85%;
+}
+.video iframe{
+    width: 90%;
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgb
+}
+
+.video iframe:hover{
+   box-shadow: 0 2px 6px rgba(0,0,0,0.3), 0 2px 4px rgba(0,0,0,0.3);
+   transition: box-shadow 0.3s ease-in-out;
 }
 
 /*dates*/
 
-.dates-transmisiones  {
+@media print {
+    .table, .table__body {
+     overflow: visible;
+     height: auto !important;
+     width: auto !important;
+    }
+   }
+
+   
+section.table {
+    width: 82vw;
+    height: 90vh;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+}
+
+.table__header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table__header .input-group {
+    width: 35%;
+    height: 100%;
+    background-color: #fff5;
+    padding: 0 .8rem;
+    border-radius: 2rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+
+    transition: .2s;
+}
+
+.table__header .input-group:hover {
+    width: 45%;
+    background-color: #fff8;
+    box-shadow: 0 .1rem .4rem #0002;
+}
+
+
+.table__header .input-group input {
+    width: 100%;
+    padding: 0 .5rem 0 .3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.table__body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+    overflow: overlay;
+}
+
+
+.table__body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+
+
+table {
     width: 100%;
 }
 
-.dates-transmisiones h2 {
-    margin: 30px;
-
-}
-
-.dates-transmisiones table {
-    width: 90%;
+table, th, td {
     border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+tbody tr:hover {
+    background-color: rgba(181, 181, 181, 0.4) !important;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td {
+    transition: .2s ease-in-out;
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    padding: 0;
+    font: 0 / 0 sans-serif;
+    transition: .2s ease-in-out .5s;
+}
+
+
+.status {
+    padding: .4rem 0;
+    border-radius: 2rem;
     text-align: center;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 20px rgba(0,0,0,0.15);
-    margin-bottom: 30px;
 }
 
-.dates-transmisiones th, .dates-transmisiones td {
-    padding: 12px 15px;
+.status.finished {
+    background-color: #86e49d;
+    color: #006b21;
 }
 
-.dates-transmisiones th {
-    
-    color: #333;
+.status.cancelled {
+    background-color: #d893a3;
+    color: #b30021;
 }
 
-.dates-transmiciones td {
-    border-bottom: 1px solid #dddddd;
+.status.pending {
+    background-color: #ebc474;
 }
 
-.dates-transmiciones tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
 }
 
+
+
+.row-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+}
 /* ---------------------------------*/
 
 
