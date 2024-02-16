@@ -23,11 +23,24 @@ body {
     box-shadow: 10px 10px 10px 2px #6f7357;
     transition: transform 0.3s ease;
     margin: 40px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Transición más suave */
+    transition: transform 0.3s ease, border 0.3s ease;
+
+    /* Cambio de cursor */
+    cursor: pointer;
+
 }
+
 
 .form-container:hover {
     transform: translateY(-3%);
+    transition: 2.5s;
+    border: 3px solid #273a2d;
+    background-image: linear-gradient(to bottom, #f3f6f2, #4b6e54); 
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); 
 }
+
 
 .form-container h2 {
     text-align: center;
@@ -72,12 +85,13 @@ body {
 
 /* Estilos para el botón */
 .form-container button:hover {
-    background-color: #558263;
+    background-color: #273a2d;
     color: #000000;
 }
 
 .btn {
-    background-color: #273a2d;
+    background-color:#558263 ;
+    
     border-radius: 10px;
     cursor: pointer;
     width: 100%;
@@ -112,6 +126,7 @@ header {
     background-color: #fff;
     border-bottom: 2px solid #273a2d;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
 }
 
 .logo img {
@@ -140,13 +155,6 @@ header nav ul li a:hover {
 }
 
 /* Estilos para el pie de página */
-footer {
-    margin-top: 30px;
-    padding: 20px 10%;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
 .icons {
     display: flex;
     justify-content: space-between;
@@ -179,7 +187,7 @@ footer {
 .img-container,
 .img-container2,
 .form-container {
-    flex-basis: calc(33.33% - 20px);
+    flex-basis: calc(30.33% - 20px);
     margin: 10px; 
 }
 
@@ -198,3 +206,52 @@ footer {
 .img-container img {
     animation: continuous-scale 3s infinite alternate;
 }
+
+
+/*footer*/
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+.footer-description {
+    margin-bottom: 15px;
+}
+
+.footer-description p,
+.footer-description p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.input-container label::after {
+    content: " *";
+    color: red;
+}
+
